@@ -1,0 +1,161 @@
+/* Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.cartContainer {
+  /* background: yellow; */
+  position: absolute;
+  min-width: 25rem;
+  min-height: 50%;
+  margin-left: 50%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr 5rem;
+  grid-template-rows: 3rem 40rem;
+  grid-template-areas:
+    ". icon"
+    "cart cart";
+  gap: 2em;
+}
+
+.cartIcon {
+  background: #f3f3f3;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  border: 1px solid black;
+  grid-area: icon;
+  cursor: pointer;
+}
+
+.pointer {
+  position: absolute;
+  background: none;
+  z-index: 105;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+  border-bottom: 2em solid white;
+  transform: translateY(-50%);
+}
+
+.cart {
+  margin-top: 1em;
+  /* bottom: 0; */
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.45);
+  position: absolute;
+  grid-area: cart;
+  z-index: 200;
+  display: none;
+}
+
+.cartHeading {
+  font-family: "Roboto", sans-serif;
+  margin: 0.5em;
+}
+
+/* Class used for showing the cart on click */
+.showCart {
+  display: grid;
+}
+
+.cartItem {
+  width: 100%;
+  height: 7rem;
+  background: white;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  padding: 2em;
+  gap: 2em;
+  align-items: center;
+  border-bottom: 2px solid #bcbcbc;
+}
+
+.cartItem:last-child {
+  border-bottom: none;
+}
+
+.items {
+  margin: 1em auto;
+  height: 22rem;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 5rem;
+}
+
+.productTitle,
+.productBrand,
+.productColor,
+.price {
+  font-size: 14px;
+  font-family: "Source Serif Pro", serif;
+}
+
+.productBrand,
+.productColor {
+  color: #707070;
+}
+
+.price {
+  margin-top: 0.5em;
+}
+
+.productTitle {
+  margin-bottom: 0.5em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+button {
+  padding: 1em;
+}
+
+/* Container for "edit cart" and "checkout" buttons  */
+.buttonContainer:last-child {
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.editButton {
+  border: 2px solid black;
+  width: 10em;
+  font-family: "Roboto", sans-serif;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkoutButton {
+  background: #79ad36;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  width: 10em;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "inchoo-task",
+  "version": "1.0.0",
+  "description": "Zadatak riješen prilikom prijave za posao na poziciji Front-end developera u firmi Inchoo. Live preview stranice dostupan na https://antonlovric.github.io/Inchoo-Task/",
+  "main": "index.js",
+  "scripts": {
+    "postcss:watch": "postcss src/cssFiles/main.css --dir dist",
+    "autoprefixer": "postcss dist/main.css --use autoprefixer -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonlovric/Inchoo-Task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonlovric/Inchoo-Task/issues"
+  },
+  "homepage": "https://github.com/antonlovric/Inchoo-Task#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.10",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-simple-vars": "^6.0.3",
+    "precss": "^4.0.0"
+  }
+}

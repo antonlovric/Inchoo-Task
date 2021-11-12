@@ -1,0 +1,49 @@
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+button {
+  padding: 1em;
+}
+
+/* Container for "edit cart" and "checkout" buttons  */
+.buttonContainer:last-child {
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.editButton {
+  border: 2px solid black;
+  width: 10em;
+  font-family: "Roboto", sans-serif;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkoutButton {
+  background: #79ad36;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  width: 10em;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .editButton,
+  .checkoutButton {
+    width: 7em;
+
+    font-size: 12px;
+  }
+}
